@@ -31,10 +31,12 @@
     <div id="experience">
       <section class="four_quarter">
         <article class="two_quarter">
-          <h2>Decision taking and motion planing with LTL</h2>
-          (Masters in Computer Science Thesis)
-          <p>I propose a system that produces motion planning routes for high level tasks by using linear temporal logic (LTL). Every task described as an LTL formula can be translated to a finite deterministic automata. </p>
-          <p>The system includes a user console where the known task to be executed can be specified. Also, more goals can be added on running time. The plans are generated using a two level planner. In the first level the regions of interest related to configurations of the robot and the LTL formula are used. In the second level a Rapidly - Exploring Random Tree (RRT) planner is used to create valid paths between the regions of interest included in the first level plan.</p> 
+          <h2>Decision making and motion planing with LTL and RRTs for a simulated PR2</h2>
+          (Masters in Computer Science's Thesis)
+          <p>One of the main issues in Robotics is converting high level plans into motion planning control inputs. In this project I propose a system which integrates a high level planner which generates appropriate plans defined in Linear Temporal Logic (LTL) with a lower level motion planner which uses Rapidly-exploring Random Trees (RRT).</p> 
+          <p>The plans are generated using a two level planner. In the first level the regions of interest related to configurations of the robot and the LTL formula are used. In the second level a Rapidly - Exploring Random Tree (RRT) planner is used to create valid paths between the regions of interest included in the first level plan.</p>           
+          <p>Every task described as an LTL formula is translated to a reduced finite deterministic automata. Then this automata is used to obtain a valid high level plan that satisfies the LTL task. Once a valid high level plan is found, it is sent to the RRT lower level planner which creates valid trajectories for all the sub task defined in the high level plan.</p>
+          <p>The known task are defined in a XML file. The system includes a user console for specifying the task to be executed. More known goals can be added on running time.</p>
           <p>At the end, the trajectory and the planning tree are shown using ROS 3D Visualizer (Rviz) and it is simulated on Gazebo. Several experiments were conducted to test the basic skills of the system, which includes solving sequential, coverage and disjunction automata for the base of a simulated Personal Robot 2 (PR2) of 3 degrees of freedom.</p> 
         </article>
         <article class="two_quarter lastbox">
@@ -50,11 +52,11 @@
       <section class="four_quarter">
         <article class="two_quarter">
           <h2>ITAMSAT-1</h2>
-          (Telecommunications BS degree thesis)
-          <p>I propose the design, construction, validation and evaluation of ITAMSAT-1, a can sized satellite (CANSAT) for didactic activities. ITAMSAT-1 is capable of obtaining meteorological data (ozone (O3), humidity and temperature) and transmit it to the earth station through radio communication. </p>
-          <p>This work is divided in the design of the satellite, followed by the construction. Then the validation and integration tests take place. The design of the prototype includes the different essential subsystems of a conventional satellite: (i) power, (ii) control, (iii) mission, (iv) communication, (v) geo localization, and (vi) mounting. </p>
-          <p>Validation and integration tests ensure the correct operation of each component of ITAMSAT-1 individually and as an integrated system. The main evaluation experiment includes elevating ITAMSAT-1 between 1 to 100m high in the atmosphere with the mission of collecting meteorological data and transmit them to the earth station.</p> 
-          <p>Two experiments were made, the first includes elevating the satellite using 6 giant balloons filled with helium and the second one implies elevating the satellite using an unmanned aerial vehicle (UAV). All the data collected by ITAMSAT-1 are stored in order to be validated and later used. The earth station counts with a user interface that allows the users to visualize the data sent by ITAMSAT-1 in real time, also a journal of this information is stored.</p>
+          (BS Computer & Telecommunications Engineering's thesis)
+          <p>Design, construction, validation and evaluation of ITAMSAT-1, a can sized satellite (CANSAT) for didactic activities. ITAMSAT-1 is capable of obtaining meteorological data (ozone (O3), humidity and temperature) and transmit it to the base station through radio communication. </p>
+          <p>This work is divided in the design of the satellite, followed by the construction. Then the validation and integration tests. The design of the prototype includes the different essential subsystems of a conventional satellite: (i) power, (ii) control, (iii) mission, (iv) communication, (v) geo localization, and (vi) mounting. </p>
+          <p>Validation and integration tests ensure the correct operation of each component of ITAMSAT-1 individually and as an integrated system. The main evaluation experiments include elevating ITAMSAT-1 between 1 to 100m high in the atmosphere with the mission of collecting meteorological data and transmit it to the base station.</p> 
+          <p>Two experiments were made, the first includes elevating the satellite using 6 giant balloons filled with helium and the second one implies elevating the satellite using an unmanned aerial vehicle (UAV). All the data collected by ITAMSAT-1 are stored in order to be validated and later used. The base station counts with a user interface that allows the users to visualize the data sent by ITAMSAT-1 in real time, also a journal of this information is stored.</p>
         </article>
         <article class="two_quarter lastbox">
           <figure>
@@ -70,7 +72,9 @@
         <article class="two_quarter">
           <h2>UX-AdChat: Semi-automatic, predictable usability evaluator of written dialogue systems</h2>
           (BlueMessaging Intern Research and Article Collaboration)
-          <p>AdChat is a dialogue manager system that assists users in buying the product that best fits their needs. The semi-automatic, web-based usability evaluation system, UX-AdChat, evaluates the satisfaction of the clients that use any system based on AdChat without any human assistance while applying the test. The goal is to predict the satisfaction of the clients based on the PARADISE framework, combining the measurement of qualitative and quantitative attributes in order to maximize the experience of the users while optimizing costs.</p>
+          <p>AdChat is a dialogue manager system that assists users in buying the product that best fits their needs. The semi-automatic, web-based usability evaluation system, UX-AdChat, evaluates the satisfaction of the clients that use any system based on AdChat without any human assistance while applying the test. </p>
+          <p>The goal is to predict the satisfaction of the clients based on the PARADISE framework, combining the measurement of qualitative and quantitative attributes in order to maximize the experience of the users while optimizing costs.</p>
+          <p>An important result gathered from the study is that usability of dialogue systems is tightly related to dialogue understanding capability. Also, we proposed multiple quantitative metrics as alternatives to observations made by human appliers in a usability test. In order to gain more understanding of the usability of dialogue systems, we need to make more studies using our usability evaluation system.</p>
         </article>
         <article class="two_quarter lastbox">
           <figure>
@@ -87,10 +91,11 @@
           <h2>Comparison of Low pass filter and double component Hill-type muscle models</h2>
           (USC Summer Research)
           <p>A muscle model is a system that simulates the tension generated by a muscle when it is
-activated by neuron spikes. These kind of simulations are important for medical and rehab fields, allowing
+activated by neuron spikes. These kind of simulations are important in the fields of medicine and rehab , allowing
 many muscular disorders to be studied. </p>
-          <p>Two different muscle models were implemented, validated and compared as part of my summer research at the Brain-Body Dynamics Lab at USC. The comparison between a simple low pass filter and a more complicated Hill-Type muscle model with two components shows that the tension created by a muscle can be simulated in different ways, according to the needs of each individual experiment. The experiments were rate coding and no recruitment was done; the models were fed with different frequency rates from 1 Hz to 80 Hz, and the results were compared for fixed and variable frequency exaltation. </p>
-          <p>The implementation of the low pass filter was simpler compared to the Hill-Type model used. Factors such as fused and unfused tetanus vary depending on the model. It is proved that complex models are more likely to represent the real behaviour of a muscle depending on the components modelled for it. Modelling the active and passive force that is missing in the low pass filter gives the Hill-Type muscle model advantages over the first one in terms of accuracy to reality. The saturation of the motors was the biggest cause of limitation for the tension generated by the NI system.</p>
+          <p>Two different muscle models were implemented, validated and compared as part of my summer research at the Brain-Body Dynamics Lab at USC. </p> 
+          <p>The comparison between a simple low pass filter and a more complicated Hill-Type muscle model with two components shows that the tension created by a muscle can be simulated in different ways, according to the needs of each individual experiment. The experiments were rate coding and no recruitment was done; the models were fed with different frequency rates from 1 Hz to 80 Hz, and the results were compared for fixed and variable frequency exaltation. </p>
+          <p>The implementation of the low pass filter was simpler compared to the Hill-Type model used. Factors such as fused and unfused tetanus vary depending on the model. It is proved that complex models are more likely to represent the real behaviour of a muscle. Modelling the active and passive force that is missing in the low pass filter gives the Hill-Type muscle model advantages over the first one in terms of accuracy to reality. The saturation of the motors was the biggest cause of limitation for the tension generated by the NI system.</p>
         </article>
         <article class="two_quarter lastbox">
           <figure>
@@ -104,9 +109,11 @@ many muscular disorders to be studied. </p>
     <div id="arts">
       <section class="four_quarter">
         <article class="two_quarter">
-          <h2>Multi-Agent Group Behaviors using Roadmap-Based Techniques</h2>
+          <h2>Multi-Agent Group Behaviour using Roadmap-Based Techniques</h2>
           (REU Summer Research Parasol Lab Texas A&M)
-          <p>In robotics, multiple robots frequently collaborate together in order to accomplish a common goal that might normally be too difficult or time-consuming for individual agents. In this paper, we present a novel framework for modeling group behaviors using a set of abstract components. On the highest level a simulator coordinates the behaviors and the transition between states. The behaviors in turn specify a goal and movement for each agent. We utilize roadmap-based planners to provide a path for each agent through the environment. This path may span over simple planar or multilevel environments such as an office building. The local controller applies the correct controls to the agent to approximately follow this path while avoiding obstacles and other agents. We then take these modified controls and apply motion models, an abstraction of agent motion to move the agents state. The agents have knowledge of their state through sensors which publish data to information sources. We demonstrate three common behaviors in this framework: reciprocal velocity obstacles, frontier search, and large scale evacuation in simple and multilevel environments.</p>
+          <p>In robotics, multiple robots frequently collaborate together in order to accomplish a common goal that might normally be too difficult or time-consuming for individual agents. We present a novel framework for modelling group behaviours using a set of abstract components.</p> 
+          <p>On the highest level a simulator coordinates the behaviours and the transition between states. The behaviours in turn specify a goal and movement for each agent. We utilize roadmap-based planners to provide a path for each agent through the environment. This path may span over simple planar or multilevel environments such as an office building. The local controller applies the correct controls to the agent to approximately follow this path while avoiding obstacles and other agents. We then take these modified controls and apply motion models, an abstraction of agent motion to move the agents state.</p>
+          <p>The agents have knowledge of their state through sensors which publish data to information sources. We demonstrate three common behaviors in this framework: reciprocal velocity obstacles, frontier search, and large scale evacuation in simple and multilevel environments.</p>
         </article>
         <article class="two_quarter lastbox">
           <figure>
